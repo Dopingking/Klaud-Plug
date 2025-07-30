@@ -7,10 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+<link rel="shortcut icon" href="./Img/Klaud Plug Logo - Emblem Style.png" style="border-radius: 50%;" type="image/x-icon">
   </head>
   <style>
     
+     .section-title {
+            position: relative;
+            margin-bottom: 50px;
+        }
+       
 .nav-link-custom {
   color: #e5e7eb !important;
   font-weight: 500;
@@ -24,117 +29,257 @@
 .text-orange {
   color: #f97316;
 }
-
-.carousel-item img {
-  height: 400px; 
-  object-fit: cover; 
-  width: 100%;
-}
-
- .carousel-caption.glass {
-    background: rgba(255, 255, 255, 0.313);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 10px;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .carousel-caption.glass h5,
-  .carousel-caption.glass p {
-    color: #fff;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  }
-
-   .service-card {
-            transition: transform 0.3s;
-            height: 100%;
-            background-color: #1e1e2f !important;
-            color: #fff;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        .service-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #f97316;
-        }
     
-          .testimonial-card {
-            border-radius: 15px;
-            overflow: hidden;
-            transition: transform 0.3s;
-            border: none;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .testimonial-card:hover {
-            cursor: pointer;
-        }
-        .testimonial-header {
-            background:#1e1e2f;
+ .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 20px;
-        }
-        .testimonial-body {
-            padding: 25px;
-            position: relative;
-        }
-        .testimonial-body:before {
-            content: "\201C";
-            font-family: Georgia;
-            font-size: 80px;
-            color: rgba(13, 110, 253, 0.1);
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            line-height: 1;
-        }
-        .testimonial-text {
-            font-size: 1.1rem;
-            font-style: italic;
-            position: relative;
-            z-index: 1;
-        }
-        .testimonial-author {
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .testimonial-rating {
-            color: #ffc107;
-            margin-bottom: 10px;
-        }
-        .testimonial-image {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            border: 3px solid white;
-            object-fit: cover;
-            margin-top: -15px;
-            background: #f97316;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 100px 0;
+            margin-bottom: 50px;
         }
         .section-title {
             position: relative;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
-        .section-title:after {
-            content: "";
+  
+        .about-feature {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .about-feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #0d6efd;
+            margin-bottom: 20px;
+        }
+        .team-member {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .team-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #f8f9fa;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .stats-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #0d6efd;
+        }
+    footer {
+            background-color: #1e1e2f;
+            color: #fff;
+            padding: 1rem 0;
+            width: 100% !important;
+        }
+        .footer-heading {
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .footer-heading:after {
+            content: '';
             position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: #1e1e2f;
+            left: 0;
+            bottom: -8px;
+            width: 40px;
+            height: 2px;
+            background: #f97316;
         }
-    
+        .footer-links a {
+            color: #6c757d;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s;
+        }
+        .footer-links a:hover {
+            color: #f97316;
+            padding-left: 5px;
+        }
+        .contact-info {
+            color: #6c757d;
+        }
+        .contact-info i {
+            color: #f97316;
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        .social-icons a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background: #f97316;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            margin-right: 8px;
+            transition: all 0.3s;
+        }
+        .social-icons a:hover {
+            background: #0b5ed7;
+            transform: translateY(-3px);
+        }
+        .contact-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-hero {
+                padding: 60px 0;
+            }
+            .contact-hero h1 {
+                font-size: 2.2rem;
+            }
+            .contact-hero p.lead {
+                font-size: 1.1rem;
+            }
+        }
+
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 576px) {
+            .contact-form {
+                padding: 20px 15px;
+            }
+        }
+
+        .form-control, .form-select {
+            height: 50px;
+            margin-bottom: 15px;
+            border: 1px solid #e0e0e0;
+            font-size: 0.95rem;
+        }
+        
+        textarea.form-control {
+            height: auto;
+            min-height: 150px;
+        }
+
+        .contact-info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-info-card {
+                margin-bottom: 15px;
+            }
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-icon {
+            font-size: 1.8rem;
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 576px) {
+            .contact-icon {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+        }
+
+
+        .section-title {
+            position: relative;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 25px;
+            }
+           
+        }
+
+        .btn-primary {
+            padding: 12px 25px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 576px) {
+            .btn-primary {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+
+        .business-hours td {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .business-hours tr:last-child td {
+            border-bottom: none;
+        }
+
+        .alert-info {
+            padding: 20px;
+            border-left: 4px solid #0d6efd;
+        }
+        
+        @media (max-width: 576px) {
+            .alert-info h4 {
+                font-size: 1.1rem;
+            }
+            .alert-info h3 {
+                font-size: 1.3rem;
+            }
+        }
   </style>
   <body>
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg border-bottom fixed-top" style="background-color: #1e1e2f;">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold fs-4" href="#" style="color: #f97316;">
+    <a class="navbar-brand fw-bold fs-4" href="/index.html" style="color: #f97316;">
       <i class="fas fa-plug me-1"></i> KlaudPlug
     </a>
 
@@ -146,7 +291,7 @@
     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active text-light nav-link-custom" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active text-light nav-link-custom" aria-current="page" href="/index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light nav-link-custom" href="About.html">About</a>
@@ -157,21 +302,186 @@
       </ul>
 
       <div class="d-flex gap-2">
-        <a href="#" class="btn text-dark fw-semibold" style="background-color: #f97316; border-color: #f97316;">
+        <a href="https://www.apple.com/ng/" target="_blank" class="btn text-dark fw-semibold" style="background-color: #f97316; border-color: #f97316;">
           Shop Now
         </a>
-        <a href="#" class="btn btn-outline-light fw-semibold">
+        <a href="https://support.hp.com/us-en" target="_blank" class="btn btn-outline-light fw-semibold">
           Request Repair
         </a>
       </div>
     </div>
   </div>
 </nav>
-
 <br>
+<!-- Main Content -->
 
+  <section class="contact-hero text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Contact KlaudPlug</h1>
+            <p class="lead mb-0">We're here to help with your questions and repair requests</p>
+        </div>
+    </section>
 
+    <!-- Contact Form Section -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <input type="tel" class="form-control" placeholder="Phone Number">
+                            <select class="form-select">
+                                <option selected disabled>What can we help you with?</option>
+                                <option>Product Inquiry</option>
+                                <option>Repair Request</option>
+                                <option>Technical Support</option>
+                                <option>Order Status</option>
+                                <option>Other Question</option>
+                            </select>
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary mt-2">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <h2 class="section-title">Contact Info</h2>
+                    <div class="contact-info-card text-center">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <h3 class="h5">Our Location</h3>
+                        <p class="mb-0">KLaud Address, Tech District<br>Lagos</p>
+                    </div>
+                    
+                    <div class="contact-info-card text-center">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h3 class="h5">Email Us</h3>
+                        <p class="mb-0">info@klaudplug.com<br>support@klaudplug.com</p>
+                    </div>
+                    
+                    <div class="contact-info-card text-center">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <h3 class="h5">Call Us</h3>
+                        <p class="mb-0">Sales: (123) 456-7330<br>Support: (123) 456-7331</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Map Section -->
+    <!-- <section class="pb-4">
+        <div class="container">
+            <h2 class="section-title">Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209107987!2d-73.9878449245253!3d40.74844097138965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTMuNyJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Business Hours Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">Business Hours</h2>
+                    <table class="table business-hours">
+                        <tbody>
+                            <tr>
+                                <td><strong>Monday - Friday</strong></td>
+                                <td>9:00 AM - 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Saturday</strong></td>
+                                <td>10:00 AM - 4:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sunday</strong></td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Emergency Repairs</strong></td>
+                                <td>24/7 Support</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Quick Support</h2>
+                    <div class="alert alert-info mb-0">
+                        <h4 class="h5"><i class="fas fa-headset me-2"></i> Need Immediate Help?</h4>
+                        <p class="mb-2">For urgent repair requests or technical support:</p>
+                        <h3 class="h4 text-primary mb-2">(123) 456-7332</h3>
+                        <p class="mb-0 small">Available 24/7 for emergency services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+ <!-- Footer Section -->
+    <footer class="footer w-100">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-heading">Get in Touch</h3>
+                    <p>We're here to help with your questions, product needs, and repair requests.</p>
+                    
+                    <div class="contact-info mt-4">
+                        <p><i class="fas fa-envelope"></i> .......in view</p>
+                        <p><i class="fas fa-phone"></i> +(234) 812 104 2575</p>
+                        <p><i class="fas fa-map-marker-alt"></i> ......in view</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="./Pages/About.html">About</a>
+                        <a href="#">Shop</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h3 class="footer-heading">Customer Service</h3>
+                    <div class="footer-links">
+                        <a href="#">Request Repair</a>
+                        <a href="#">Shipping Policy</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="social-icons mb-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                    <h3 class="footer-heading">KlaudPlug</h3>
+                    <p>Premium tech solutions for all your gadget needs.</p>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">© 2025 KlaudPlug. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
 </html>
